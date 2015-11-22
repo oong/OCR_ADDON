@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item
+        android:id="@+id/action_housekeeping"
+        android:title="@string/action_housekeeping"
+        android:icon="@drawable/action_houssekeep_ic"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_nutrient"
+        android:icon="@drawable/action_nutrient_ic"
+        android:title="@string/action_nutrient"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:icon="@drawable/action_settings_ic"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom" />
+</menu>
