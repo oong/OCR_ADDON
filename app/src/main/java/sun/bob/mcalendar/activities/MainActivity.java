@@ -26,6 +26,7 @@ import sun.bob.mcalendar.beans.TaskBean;
 import sun.bob.mcalendar.content.CalendarResolver;
 import sun.bob.mcalendar.fragments.FragmentCalendar;
 import sun.bob.mcalendar.fragments.FragmentSetting;
+import sun.bob.mcalendar.fragments.FragmentStatistics;
 import sun.bob.mcalendar.fragments.FragmentTask;
 import sun.bob.mcalendarview.utils.CalendarUtil;
 import sun.bob.mcalendarview.utils.CurrentCalendar;
@@ -43,6 +44,7 @@ public class MainActivity extends BaseCompatActivity {
     private FragmentCalendar fragmentCalendar;
     private FragmentTask fragmentTask;
     private FragmentSetting fragmentSetting;
+    private FragmentStatistics fragmentStatistics;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,6 +79,7 @@ public class MainActivity extends BaseCompatActivity {
     public void initUI() {
         ((TabBar) findViewById(R.id.id_tabbar))
                 .addTab(R.drawable.calendar, R.drawable.calendar_filled, "Calendar", Color.GRAY, Color.rgb(34, 145, 255))
+                .addTab(R.drawable.checklist, R.drawable.checklist_filled, "List", Color.GRAY, Color.rgb(34, 145, 255))
                 .addTab(R.drawable.stat, R.drawable.stat_filled, "Stat", Color.GRAY, Color.rgb(34, 145, 255))
                 .addTab(R.drawable.settings, R.drawable.settings_filled, "Settings", Color.GRAY, Color.rgb(34, 145, 255))
                 .setOnTabClickedListener(new OnTabClickedAction());
@@ -84,13 +87,18 @@ public class MainActivity extends BaseCompatActivity {
         fragmentCalendar = new FragmentCalendar();
         fragmentTask = new FragmentTask();
         fragmentSetting = new FragmentSetting();
+        fragmentStatistics = new FragmentStatistics();
         fragments = new ArrayList<>();
         fragments.add(fragmentCalendar);
         fragments.add(fragmentTask);
+        fragments.add(fragmentStatistics);
         fragments.add(fragmentSetting);
-        getSupportFragmentManager().beginTransaction().add(R.id.id_fragment_container, fragmentCalendar)
+        getSupportFragmentManager().beginTransaction()
+                .add(R.id.id_fragment_container, fragmentCalendar)
                 .add(R.id.id_fragment_container, fragmentTask)
                 .hide(fragmentTask)
+                .add(R.id.id_fragment_container, fragmentStatistics)
+                .hide(fragmentStatistics)
                 .add(R.id.id_fragment_container, fragmentSetting)
                 .hide(fragmentSetting)
                 .commit();
