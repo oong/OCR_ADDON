@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.net.Uri;
 import android.provider.CalendarContract;
+import android.util.Log;
 
 
 import java.util.ArrayList;
@@ -98,6 +99,7 @@ public class CalendarResolver {
         if (cursor.getCount() > 0){
             while (cursor.moveToNext()){
                 toAdd = new TaskBean().populate(cursor);
+                Log.d("OONG", toAdd.toString());
                 if (toAdd.getrRule() != null){
                     allTasks.addAll(RecurrenceUtil.getAllRecurrence(
                             toAdd,

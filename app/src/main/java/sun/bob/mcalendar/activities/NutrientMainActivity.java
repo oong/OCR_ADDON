@@ -45,8 +45,8 @@ public class NutrientMainActivity extends BaseCompatActivity {
     @Override
     public void initUI() {
         ((TabBar) findViewById(R.id.id_tabbar_nutrient))
-                .addTab(R.drawable.tabbar_add_ic, R.drawable.tabbar_add_ic, "Calendar", Color.GRAY, Color.rgb(34, 145, 255))
-                .addTab(R.drawable.tabbar_graph_ic, R.drawable.tabbar_graph_ic_filled, "Stat", Color.GRAY, Color.rgb(34, 145, 255))
+                .addTab(R.drawable.tabbar_add_ic, R.drawable.tabbar_add_ic, "Add", Color.GRAY, Color.rgb(34, 145, 255))
+                .addTab(R.drawable.tabbar_graph_ic, R.drawable.tabbar_graph_ic_filled, "Recent List", Color.GRAY, Color.rgb(34, 145, 255))
                 .addTab(R.drawable.settings, R.drawable.settings_filled, "Settings", Color.GRAY, Color.rgb(34, 145, 255))
                 .setOnTabClickedListener(new OnTabClickedAction());
 
