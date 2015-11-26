@@ -1,8 +1,8 @@
 package sun.bob.mcalendar.adapters;
 
 import android.content.Intent;
-import android.support.design.widget.Snackbar;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 
 import sun.bob.mcalendar.activities.TaskActivity;
@@ -22,6 +22,7 @@ public class OnTaskClickListener implements RecyclerView.OnClickListener{
 
     @Override
     public void onClick(View v) {
+        Log.d("OONG", "OnTaskClickListener");
         TaskBean taskBean = ((TaskAdapter) recyclerView.getAdapter()).getTasks().get(recyclerView.getChildLayoutPosition(v));
         Intent newTaskIntent = new Intent(v.getContext(), TaskActivity.class);
         newTaskIntent.putExtra("year", CurrentCalendar.getCurrentDateData().getYear());
