@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/RecurrenceRule/RecurrenceRule.iml" filepath="$PROJECT_DIR$/RecurrenceRule/RecurrenceRule.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
       <module fileurl="file://$PROJECT_DIR$/mCalendar-master.iml" filepath="$PROJECT_DIR$/mCalendar-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/mcalendarview/mcalendarview.iml" filepath="$PROJECT_DIR$/mcalendarview/mcalendarview.iml" />
       <module fileurl="file://$PROJECT_DIR$/tabbar/tabbar.iml" filepath="$PROJECT_DIR$/tabbar/tabbar.iml" />
