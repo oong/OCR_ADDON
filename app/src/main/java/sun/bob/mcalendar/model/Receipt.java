@@ -11,6 +11,7 @@ import java.util.Date;
 public class Receipt {
 
     static final String DATE_FORMAT = "yyyy-MM-dd HH:mm";
+
     private String date;
     private String distributor;
     private ArrayList<PurchaseItem> purchaseList;

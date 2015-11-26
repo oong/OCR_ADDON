@@ -229,7 +229,7 @@ public class TaskBean implements Comparable {
                 '}';
     }
 
-    private List<PurchaseItem> objectifyDescription(String description) {
+    public List<PurchaseItem> objectifyDescription(String description) {
         ArrayList<PurchaseItem> itemList = new ArrayList<PurchaseItem>();
         StringTokenizer stok = new StringTokenizer(description, " \n");
         while (stok.hasMoreTokens()) {

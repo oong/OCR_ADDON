@@ -100,7 +100,7 @@ public class TaskActivity extends AppCompatActivity implements View.OnClickListe
 
     private void initUI(){
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-//        findViewById(R.id.id_edit_start).setOnClickListener(new DatePickerTrigger(dateStart, PICK_START));
+        findViewById(R.id.id_edit_start).setOnClickListener(new DatePickerTrigger(dateStart, PICK_START));
 //        findViewById(R.id.id_edit_end).setOnClickListener(new DatePickerTrigger(dateEnd, PICK_END));
 //        repetition = ((Spinner) findViewById(R.id.id_edit_repetition));
 //        repetition.setAdapter(new DropdownAdapter(this, android.R.layout.simple_spinner_item).setWhich(SPINNER_REPEAT));
