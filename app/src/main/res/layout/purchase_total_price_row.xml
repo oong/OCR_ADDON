@@ -1,0 +1,18 @@
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_span="2"
+        android:textSize="15sp"
+        android:text="total" />
+
+    <TextView
+        android:id="@+id/receipt_total_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:textSize="15sp"
+        android:layout_span="2"
+        android:text="0" />
+</TableRow>
